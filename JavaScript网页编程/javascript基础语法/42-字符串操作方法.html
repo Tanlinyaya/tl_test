@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.concat('字符串1', '字符串2')
+        var str = 'andy';
+        console.log(str.concat('red'));
+
+        // 2.substr('截取的起始位置', '截取几个字符');
+        var str1 = '粉红色的回忆';
+        console.log(str1.substr(2, 2)); //第一个2是索引号的2，从第几个开始，第二个2是取几个字符
+
+        // 3.替换字符replace('被替换的字符', '替换的字符') , 它只会替换第一个字符
+        var str = 'andyandy';
+        console.log(str.replace('d', 'o'));
+
+        // 有一个字符串，要求把里面所有的t换成*
+        var str1 = 'aftjetjtdet';
+        while (str1.indexOf('t') !== -1) {
+            str1 = str1.replace('t', '*')
+        }
+        console.log(str1);
+
+        // 4.字符串转为split('分隔符')
+        var str2 = 'red, pink, green';
+        console.log(str2.split(','));
+        var str3 = 'red&pink&blue';
+        console.log(str3.split('&'));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

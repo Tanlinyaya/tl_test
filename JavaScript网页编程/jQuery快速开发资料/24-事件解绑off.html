@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: slateblue;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("div").on({
+                click: function() {
+                    console.log('我点击了');
+                },
+                mouseover: function() {
+                    console.log('鼠标经过了');
+                }
+            });
+            $("ul").on("click", "li", function() {
+                alert(11);
+            });
+            // 1.事件解绑  off
+            $("div").off("click"); //这个是解除了div身上的点击事件
+            $("ul").off("click", "li");
+            // 2.one() 它只能触发事件一次
+            $("p").one("click", function() {
+                alert(11);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <ul>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+        <li>我们都是好孩子</li>
+    </ul>
+    <p>试试</p>
+</body>
+
+</html>

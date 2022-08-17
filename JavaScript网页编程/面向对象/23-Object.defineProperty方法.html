@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = {
+            id: 1,
+            pname: 'yuba',
+            age: 1,
+        }
+        Object.defineProperty(obj, 'num', {
+            // 如果值为false不允许修改这个属性值，默认值也是false
+            value: 100,
+            writable: false
+        })
+        obj.num = 1001
+        console.log(obj);
+
+        Object.defineProperty(obj, 'address', {
+            value: '鱼爸发骚了',
+            writable: false,
+            configurable: false,
+            enumerable: true
+        })
+        Object.defineProperty(obj, 'aaaa', {
+            value: '鱼爸发骚了',
+        })
+        console.log(Object.keys(obj));
+        console.log(obj);
+    </script>
+</body>
+
+</html>

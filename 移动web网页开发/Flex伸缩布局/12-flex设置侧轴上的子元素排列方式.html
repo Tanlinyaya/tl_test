@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: palevioletred;
+            /* 默认的主轴是x轴 row         */
+            /* 设置主轴为y轴 */
+            flex-direction: column;
+            justify-content: center;
+            /* 我们需要一个侧轴居中 */
+            /* 拉伸，但是子盒子不要给高度 */
+            /* align-items: stretch; */
+            align-items: center;
+        }
+        
+        div span {
+            width: 150px;
+            /* height: 100px; */
+            background-color: powderblue;
+            color: #fff;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+
+</html>

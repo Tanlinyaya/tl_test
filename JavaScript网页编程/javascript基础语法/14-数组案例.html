@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //    1. 计算数组的和以及平均值
+        // var arr = [3, 4, 2, 8, 9, 5]
+        // var avg = 0
+        // var sum = 0
+        // for (i = 0; i < arr.length; i++) {
+        //     sum += arr[i];
+        // }
+        // avg = sum / arr.length;
+        // console.log(sum, avg);
+
+        // 2.求数组中最大的值
+        // var arr = [99, 1, 45, 94, 20, 49, 98];
+        // var max = arr[0];
+        // for (i = 1; i < arr.length; i++) {
+        //     if (arr[i] > max) {
+        //         max = arr[i]
+        //     }
+        // }
+        // console.log(max);
+
+        // 3.数组转换为字符串
+        // var arr = ['red', 'blue', ' black', 'greeen', 'purple'];
+        // var str = '';
+        // var sep = '!';
+        // for (var i = 0; i < arr.length; i++) {
+        //     str += arr[i] + sep;
+        // }
+        // console.log(str);
+
+        // 4.数组存放1~10个值
+        // var arr = [];
+        // for (i = 0; i < 10; i++) {
+        //     arr[i] = i;
+        // }
+        // console.log(arr);
+
+        // 5.筛选数组
+        // 方法一
+        // var arr = [4, 3, 54, 23, 53, 56, 90, 39];
+        // var newArr = [];
+        // var j = 0;
+        // for (i = 0; i < arr.length; i++) {
+        //     if (arr[i] > 10) {
+        //         newArr[j] = arr[i];
+        //         j++;
+        //     }
+
+
+        // }
+        // console.log(newArr);
+
+        // 方法二
+        // var arr = [4, 3, 54, 23, 53, 56, 90, 39];
+        // var newArr = [];
+        // for (i = 0; i < arr.length; i++) {
+        //     if (arr[i] >= 10) {
+        //         newArr[newArr.length] = arr[i]
+        //     }
+
+        // }
+        // console.log(newArr);
+
+        // 6.删除数组指定元素（数组去重）
+        // var arr = [2, 3, 0, 4, 0, 45, 0, 23, 0]
+        // var newArr = [];
+        // for (i = 0; i < arr.length; i++) {
+        //     if (arr[i] != 0) {
+        //         newArr[newArr.length] = arr[i]
+        //     }
+        // }
+        // console.log(newArr);
+
+        // 7.翻转数组
+        var arr = ['red', 'blue', ' black', 'greeen', 'purple'];
+        var newArr = [];
+        for (i = arr.length - 1; i >= 0; i--) {
+            newArr[newArr.length] = arr[i]
+        }
+        console.log(newArr);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

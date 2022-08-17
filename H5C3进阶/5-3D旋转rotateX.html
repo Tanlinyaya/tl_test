@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 1000px;
+        }
+        
+        img {
+            display: block;
+            transition: all 1s;
+        }
+        
+        img:hover {
+            /* transform: rotateY(45deg);
+            transform: rotateX(180deg);
+            transform: rotateZ(360deg); */
+            /* transform: rotate3d(x,y,z,deg); */
+            transform: rotate3d(1, 1, 0, 45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="banner.png">
+</body>
+
+</html>

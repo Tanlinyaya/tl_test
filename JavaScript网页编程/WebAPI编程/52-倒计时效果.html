@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <span class="hour">1</span>
+        <span class="minute">2</span>
+        <span class="second">3</span>
+    </div>
+    <script>
+        var hour = document.querySelector('.hour')
+        var minute = document.querySelector('.minute')
+        var second = document.querySelector('.second')
+        var times = new Date("2022-08-05 22:00:00").getTime();
+        timer()
+        setInterval(timer, 1000);
+
+        function timer() {
+            var currentTime = Date.now();
+            var hours = parseInt((times - currentTime) / (1000 * 60 * 60));
+            hours = hours < 10 ? '0' + hours : hours;
+            var minites = parseInt((times - currentTime) / (1000 * 60) % 60);
+            var seconds = parseInt((times - currentTime) / (1000) % 60);
+            hour.innerHTML = hours;
+            minute.innerHTML = minites;
+            second.innerHTML = seconds;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+.header a {
+  color: red;
+}
+.header a:hover {
+  color: bisque;
+}
+.nav .logo {
+  color: green;
+}
+.nav::before {
+  content: "";
+}

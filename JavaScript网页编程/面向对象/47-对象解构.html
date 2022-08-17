@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            name: 'yuba',
+            age: 20,
+            sex: '男'
+        };
+        // let {
+        //     name,
+        //     age,
+        //     sex
+        // } = person
+        // console.log(name);
+        // console.log(age);
+        // console.log(sex);
+        let {
+            name: myName,
+            age: myAge,
+            sex: mySex
+        } = person;
+        console.log(myName);
+        console.log(myAge);
+        console.log(mySex);
+    </script>
+</body>
+
+</html>

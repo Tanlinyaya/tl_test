@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.cn/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.cn/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <!-- 不要忘记引入bootstrap的样式文件 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .pink {
+            height: 50px;
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"></div>
+        <div class="col-md-3 pink">左侧</div>
+        <!-- 偏移的份数就是12 — 两个盒子的份数 -->
+        <div class="col-md-3 col-md-offset-6 pink">右侧</div>
+        <div class="row"></div>
+        <!-- 如果只有一个盒子，那么就偏移 = （12-8）/ 2 -->
+        <div class="col-md-8 col-md-offset-2 pink"></div>
+
+    </div>
+</body>
+
+</html>

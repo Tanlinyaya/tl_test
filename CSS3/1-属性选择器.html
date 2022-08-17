@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器使用方法 */
+        /* 选择的是：既是button又有disabled这个属性的元素 */
+        /* 属性选择器的权重为10 */
+        
+        button[disabled] {
+            cursor: default;
+        }
+        
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- disabled是禁用我们的按钮 -->
+    <button>按钮</button>
+    <button>按钮</button>
+    <button disabled="disabled">按钮</button>
+    <button disabled="disabled">按钮</button>
+</body>
+
+</html>

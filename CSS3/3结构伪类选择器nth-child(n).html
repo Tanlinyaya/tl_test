@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.把所有odd奇数的孩子选出来 */
+        
+        ul li:nth-child(odd) {
+            background-color: tan;
+        }
+        /* 2.把所有even偶数的孩子选出来 */
+        
+        ul li:nth-child(even) {
+            background-color: red
+        }
+        /* 3.nth-child(n) 从0开始每次加1往后面计算，这里面必须是n，不能是其他的字母 */
+        
+        ul li:nth-child(n) {
+            background-color: teal
+        }
+        /* 4.nth-child(2n)选择了所有的偶数孩子 */
+        
+        ul li:nth-child(2n) {
+            background-color: tomato;
+        }
+        
+        ul li:nth-child(2n-1) {
+            background-color: tomato;
+        }
+        
+        ul li:nth-child(n+3) {
+            background-color: black;
+        }
+        
+        ul li:nth-child(-n+5) {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+        <li>我是第一个</li>
+    </ul>
+</body>
+
+</html>

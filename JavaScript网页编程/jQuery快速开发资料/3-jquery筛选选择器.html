@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>鱼爸是猪</li>
+        <li>鱼爸是猪</li>
+        <li>鱼爸是猪</li>
+        <li>鱼爸是猪</li>
+    </ul>
+    <script>
+        // 给第一个li加颜色
+        $('ul li:first').css('color', 'pink');
+        // 给第4个li加颜色
+        $('ul li:eq(3)').css('color', 'red');
+        // 给所有奇数的li加颜色
+        $('ul li:odd').css('background', 'skyblue');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-bar {
+            position: absolute;
+            left: 50%;
+            top: 300px;
+            margin-left: 600px;
+            width: 45px;
+            height: 130px;
+            background-color: pink;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 10px auto;
+        }
+        
+        .header {
+            height: 150px;
+            background-color: purple;
+        }
+        
+        .banner {
+            height: 250px;
+            background-color: skyblue;
+        }
+        
+        .main {
+            height: 1000px;
+            background-color: yellowgreen;
+        }
+        
+        span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-bar">
+        <span class="goBack">返回顶部</span>
+    </div>
+    <div class="header w">头部区域</div>
+    <div class="banner w">banner区域</div>
+    <div class="main w">主体部分</div>
+    <script>
+        var slider_bar = document.querySelector('.slider-bar');
+        // var distance = slider_bar.offsetTop;
+        // console.log("distance", distance);
+        var banner = document.querySelector('.banner');
+        var banerTop = banner.offsetTop;
+        var sliderTop = slider_bar.offsetTop - banerTop;
+        var main = document.querySelector('.main');
+        var goback = document.querySelector('.goBack');
+        var mainTop = main.offsetTop;
+        document.addEventListener('scroll', function() {
+            var hide = window.pageYOffset;
+            console.log(hide);
+            if (hide >= banerTop) {
+                slider_bar.style.position = 'fixed';
+                slider_bar.style.top = sliderTop + 'px'
+            } else {
+                slider_bar.style.position = 'absolute';
+                slider_bar.style.top = '300px';
+            }
+            if (hide >= mainTop) {
+                goback.style.display = 'block';
+            } else {
+                slider_bar.style.position = 'absolute';
+                slider_bar.style.top = '300px';
+
+            }
+        })
+    </script>
+</body>
+
+</html>

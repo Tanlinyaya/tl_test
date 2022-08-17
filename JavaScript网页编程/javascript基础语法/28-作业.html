@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Star(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+        var ldh = new Star("的话", 11, '男');
+        var zxy = new Star("学友", 11, '男');
+        var exo = new Star("exo", 11, '男');
+        var tf4 = new Star("tf4", 11, '男');
+        var stars = [];
+        stars.push(ldh);
+        stars.push(zxy);
+        stars.unshift(exo);
+        stars.splice(1, 0, tf4);
+        for (let index = 0; index < stars.length; index++) {
+            console.log(stars[index].name);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

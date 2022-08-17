@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>我是div</div>
+    <span>我是span</span>
+    <ul>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul>
+    <ol>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ol>
+    <div class="demo">
+        <div class="box">
+            <span class="erweima"></span>
+        </div>
+    </div>
+    <script>
+        // 1.父节点 parentNode
+        var erweima = document.querySelector('.erweima');
+        // 得到的是离元素最近的父级节点
+        console.log(erweima.parentNode);
+
+        // 2.子节点  childNodes所有的子节点，包含元素节点，文本节点等等
+        var ul = document.querySelector('ul');
+        var lis = ul.querySelectorAll('li');
+        console.log(ul.childNodes);
+        console.log(ul.childNodes[0].nodeType);
+        console.log(ul.childNodes[1].nodeType);
+        // children获取所有的子元素节点，实际开发常用的
+        console.log(ul.children);
+    </script>
+</body>
+
+</html>

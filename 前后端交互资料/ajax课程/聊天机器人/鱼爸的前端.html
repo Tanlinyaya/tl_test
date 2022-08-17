@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #mouse {
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+
+        .top,
+        .bottom {
+            height: 100px;
+            width: 200px;
+            background-color: yellow;
+        }
+
+        .top {
+            border-radius: 100px 100px 0 0;
+            animation: topeat 1s linear infinite;
+        }
+
+        .bottom {
+            border-radius: 0 0 100px 100px;
+            animation: bottomeat 1s linear infinite;
+        }
+
+        @keyframes topeat {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(-30deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes bottomeat {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(30deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes beanmove {
+            0% {
+                box-shadow: 300px 0 0 -80px blanchedalmond, 400px 0 0 -80px blanchedalmond, 500px 0 0 -80px blanchedalmond, 600px 0 0 -80px blanchedalmond;
+            }
+
+            100% {
+                box-shadow: 150px 0 0 -80px blanchedalmond, 250px 0 0 -80px blanchedalmond, 350px 0 0 -80px blanchedalmond, 450px 0 0 -80px blanchedalmond;
+            }
+        }
+
+        #tet {
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            border-radius: 100px;
+            animation: beanmove 1s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tet"></div>
+    <div id="mouse">
+        <div class="top"></div>
+        <div class="bottom"></div>
+    </div>
+
+
+</body>
+
+</html>

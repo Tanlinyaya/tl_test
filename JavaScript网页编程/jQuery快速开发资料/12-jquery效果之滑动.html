@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 300px;
+            background-color: skyblue;
+            display: none;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <button>下拉滑动</button>
+    <button>上拉滑动</button>
+    <button>切换滑动</button>
+    <div></div>
+    <script>
+        $(function() {
+            $('button').eq(0).click(function() {
+                // 下滑动
+                $('div').slideDown();
+            });
+            $('button').eq(1).click(function() {
+                // 上滑动
+                $('div').slideUp(500);
+            })
+            $('button').eq(2).click(function() {
+                // 切换滑动
+                $('div').slideToggle(500);
+            })
+
+        })
+    </script>
+</body>
+
+</html>

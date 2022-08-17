@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <ol>
+        <li>鱼爸是猪</li>
+        <li>鱼爸是猪</li>
+        <li class='yuba'>鱼爸是猪</li>
+        <li>鱼爸是猪</li>
+    </ol>
+
+    <ol>
+        <li>小猪佩奇</li>
+        <li>小猪佩奇</li>
+        <li>小猪佩奇</li>
+        <li>小猪佩奇</li>
+    </ol>
+    <script>
+        $(function() {
+            // $('ol .yuba').siblings('li').css('color', 'pink');
+            $('ol li').eq(2).css('color', 'green');
+        })
+    </script>
+</body>
+
+</html>

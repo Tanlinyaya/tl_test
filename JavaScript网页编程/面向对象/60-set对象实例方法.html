@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = new Set();
+        console.log(arr);
+
+        // 1.向Set中添加值
+        arr.add('a').add('b');
+        console.log(arr);
+
+        // 2.从Set中删除值
+        arr.delete('a');
+        console.log(arr);
+
+        // 3.判断某一个值是否是set数据结构中的成员
+        const r2 = arr.has('b');
+        console.log(r2);
+
+
+        // 4.清空set数据结构中的值
+        arr.clear();
+        console.log(arr.size);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='die'>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <script>
+        var div = document.querySelector('div');
+        div.addEventListener('click', function(e) {
+                alert(e.target);
+                alert(this);
+                alert("woshinidie");
+            })
+            //     divs[0].onclick = function(e) {
+            //         alert(e.target)
+            //         alert(e.this)
+
+        //         alert(11);
+        //         this.onclick = null;
+        //     }
+        //     divs[1].addEventListener('click', clicks);
+
+        //     function clicks() {
+
+        //         alert(22);
+        //         divs[1].removeEventListener('click', clicks);
+        //     }
+        //
+    </script>
+</body>
+
+</html>

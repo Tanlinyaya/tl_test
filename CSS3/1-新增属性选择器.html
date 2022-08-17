@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.直接写属性 */
+        
+        input[value] {
+            color: skyblue;
+        }
+        /* 2.属性等于值 */
+        
+        input[type="text"] {
+            color: red;
+        }
+        /* 3.选择首先是div，然后具有class属性，并且属性值必须是icon开头的这些元素 */
+        
+        div[class^=icon] {
+            color: pink;
+        }
+        /* 4.以data结尾的这些元素 */
+        
+        section[class$=data] {
+            color: skyblue;
+        }
+        
+        div.icon1 {
+            color: slateblue;
+        }
+        /* 5.可以在任何位置的 */
+        
+        div[class*="icon"] {
+            color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.利用属性选择性就可以不要借助于类或者id选择器 -->
+    <!-- <input type="text" value="请输入用户名">
+    <input type="text"> -->
+    <!-- 2.属性选择器还可以选择属性=值的某些元素 -->
+    <!-- <input type="text" name="" id="">
+    <input type="password" name="" id=""> -->
+    <!-- 3.属性选择器可以选择属性值开头的某些元素 -->
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon3">小图标4</div>
+    <!-- 4.属性选择器可以选择属性值结尾的某些元素 -->
+    <section class="icon1-data">我是安其拉</section>
+    <section class="icon2-data">我是哥斯拉</section>
+    <section class="icon3-ico">那我是谁</section>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: royalblue;
+            /* 谁做过渡给谁加 */
+            /* transition: 变化的属性  花费的时间  运动曲线  何时开始; */
+            /* transition: height .5s ease 1s; */
+            /* 如果想要多个属性都变化，属性写all就可以了 */
+            transition: all 0.5s;
+        }
+        
+        div:hover {
+            height: 400px;
+            width: 200px;
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

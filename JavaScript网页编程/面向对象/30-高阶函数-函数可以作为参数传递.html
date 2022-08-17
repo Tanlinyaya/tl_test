@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        function fn(x, y, aa) {
+            console.log(x + y);
+            aa && aa()
+        }
+        fn(1, 2, cc)
+
+        function cc() {
+            console.log(111);
+        }
+
+        $("div").animate({
+            left: '500px',
+
+        }, function () {
+            $("div").css('backgroundColor', 'red')
+        })
+    </script>
+</body>
+
+</html>
